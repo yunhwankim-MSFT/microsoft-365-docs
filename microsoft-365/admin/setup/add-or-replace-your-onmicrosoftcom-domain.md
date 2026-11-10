@@ -43,6 +43,12 @@ description: Learn how to add a new onmicrosoft.com domain and set it as your fa
 
 When you sign up for Microsoft 365, Microsoft provides an *onmicrosoft.com* domain. The *onmicrosoft.com* domain is your **fallback domain**. Microsoft provides the fallback domain in case you don't own a domain or don't want to connect a domain to Microsoft 365. An example of a fallback domain is:
 
+> [!WARNING]
+> For *.onmicrosoft.com domains, certain TXT records can't be added. This includes TXT records that contain restricted strings such as belows :
+> - site-verification
+> - domain-verification.
+> If you try to add a restricted TXT record, you might receive the following error: **"You cannot manage this record for the initial domain or its subdomains."**
+
 > [!IMPORTANT]
 > To prevent misuse and help improve deliverability of customer email, we recommend that onmicrosoft.com domains should only be used for testing purposes, not sending regular email.
 >
